@@ -1,0 +1,16 @@
+---
+# tasks file for startservice
+- name: Webserver | Create Unit file
+  become: yes
+  template:
+    src=webserver.service.j2
+    dest=/lib/systemd/system/webserver.service
+    mode=644
+  notify:
+    - reload systemctl
+    
+- name: Start Webserver
+  service:
+    name=webserver.service
+    state=started
+    enabled=yes

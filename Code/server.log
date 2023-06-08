@@ -1,0 +1,8 @@
+INFO:root:Listening on localhost:8080 ...
+INFO:root:Accepted client connection from 127.0.0.1:58876
+INFO:root:Request: GET /python/demopage.htm HTTP/1.1
+INFO:root:Accepted client connection from 127.0.0.1:58880
+INFO:root:Request: GET /python/demopage.htm HTTP/1.1
+INFO:root:Listening on localhost:8080 ...
+INFO:root:Accepted client connection from 127.0.0.1:58895
+INFO:root:Request: GET /python/demopage.htm HTTP/1.1

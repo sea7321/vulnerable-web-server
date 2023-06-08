@@ -1,0 +1,9 @@
+FROM python:3
+
+WORKDIR /webserver
+
+COPY . .
+RUN pip install -r requirements.txt
+
+CMD [ "python", "./server.py", "172.16.1.2", "8080" ]
+EXPOSE 8080

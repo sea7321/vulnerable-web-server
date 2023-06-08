@@ -1,0 +1,9 @@
+[Unit]
+Description=webserver
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/Code/server.py localhost 8080
+
+[Install]
+WantedBy=multi-user.target

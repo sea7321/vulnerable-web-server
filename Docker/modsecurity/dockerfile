@@ -1,0 +1,7 @@
+FROM httpd:2.4
+RUN apt update
+RUN apt install libapache2-mod-security2 -y
+RUN apt install openssl
+
+RUN openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out /usr/local/apache2/conf/server.crt -keyout /usr/local/apache2/conf/server.key -subj "/C=US/ST=NY/L=Rochester/O=RIT/OU/CSEC731/CN=www.webserver.com"
+EXPOSE 8081

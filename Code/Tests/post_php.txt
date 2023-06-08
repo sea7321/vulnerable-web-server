@@ -1,0 +1,8 @@
+POST /Scripts/postdemo.php HTTP/1.1
+Host: 127.0.0.1
+Content-Type: application/json
+
+{
+  "example1": "Hello",
+  "example2": "World"
+}

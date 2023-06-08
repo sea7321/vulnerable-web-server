@@ -1,0 +1,4 @@
+---
+# handlers file for startservice
+- name: reload systemctl
+  command: systemctl daemon-reload

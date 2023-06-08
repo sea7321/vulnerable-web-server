@@ -1,0 +1,7 @@
+POST /python/demopage.php HTTP/1.1
+Host: w3schools.com
+Content-Type: application/json
+
+{
+  "somekey": "somevalue"
+}
